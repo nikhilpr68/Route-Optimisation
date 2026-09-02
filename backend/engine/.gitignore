@@ -1,0 +1,5 @@
+build/
+compiled/*.so
+compiled/*.pyd
+compiled/*.dylib
+.distance_cache.json

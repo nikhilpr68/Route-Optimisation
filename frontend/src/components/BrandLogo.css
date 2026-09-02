@@ -1,0 +1,105 @@
+.brand-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #f4f7fb;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+  text-decoration: none;
+}
+
+.brand-logo--clickable {
+  cursor: pointer;
+  transition: opacity 0.18s ease, transform 0.18s ease;
+}
+
+.brand-logo--clickable:hover {
+  opacity: 0.96;
+}
+
+.brand-logo--clickable:active {
+  transform: translateY(1px);
+}
+
+.brand-logo--clickable:focus-visible {
+  outline: 2px solid rgba(191, 219, 254, 0.7);
+  outline-offset: 4px;
+}
+
+.brand-logo__tile {
+  width: var(--brand-logo-size, 34px);
+  height: var(--brand-logo-size, 34px);
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 24% 20%, rgba(255, 255, 255, 0.1), transparent 38%),
+    linear-gradient(180deg, rgba(16, 19, 27, 0.94), rgba(8, 10, 15, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 8px 22px rgba(0, 0, 0, 0.32);
+  flex: 0 0 auto;
+}
+
+.brand-logo__tile::after {
+  content: "";
+  position: absolute;
+  top: -18%;
+  right: -32%;
+  width: 70%;
+  height: 150%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.03));
+  transform: rotate(24deg);
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.brand-logo__mark {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: calc(var(--brand-logo-size, 34px) * 0.52);
+  letter-spacing: -0.03em;
+}
+
+.brand-logo__body {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.brand-logo__wordmark {
+  margin: 0;
+  font-size: var(--brand-logo-wordmark-size, 14px);
+  font-weight: 650;
+  letter-spacing: 0.09em;
+  color: #f5f7fb;
+}
+
+.brand-logo__tagline {
+  margin: 2px 0 0;
+  font-size: var(--brand-logo-tagline-size, 10px);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: rgba(255, 255, 255, 0.32);
+}
+
+.brand-logo--compact .brand-logo__wordmark {
+  letter-spacing: 0.04em;
+  font-size: var(--brand-logo-wordmark-size, 18px);
+}
+
+.brand-logo--compact .brand-logo__tagline {
+  display: none;
+}

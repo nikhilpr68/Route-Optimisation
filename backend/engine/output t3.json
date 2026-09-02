@@ -1,0 +1,2945 @@
+{
+  "reportType": "solution_export",
+  "generatedAt": "2026-02-23T13:28:51.471Z",
+  "runName": "Optimization — t3",
+  "summary": {
+    "assignmentsCount": 15,
+    "ridesCount": 5,
+    "ridesWithCapacityViolation": 0,
+    "distanceBackend": "haversine",
+    "distanceBackendLabel": "Haversine (Geo)"
+  },
+  "employeeVehicleAssignments": [
+    {
+      "employeeId": "E01",
+      "vehicleId": "V02",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E02",
+      "vehicleId": "V06",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E03",
+      "vehicleId": "V01",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E04",
+      "vehicleId": "V02",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E05",
+      "vehicleId": "V03",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E06",
+      "vehicleId": "V06",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E07",
+      "vehicleId": "V02",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E08",
+      "vehicleId": "V03",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E09",
+      "vehicleId": "V03",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E10",
+      "vehicleId": "V05",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E11",
+      "vehicleId": "V06",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E12",
+      "vehicleId": "V06",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E13",
+      "vehicleId": "V01",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E14",
+      "vehicleId": "V03",
+      "source": "rides.assignedEmployees"
+    },
+    {
+      "employeeId": "E15",
+      "vehicleId": "V01",
+      "source": "rides.assignedEmployees"
+    }
+  ],
+  "rideGroups": [
+    {
+      "vehicleId": "V01",
+      "groupSize": 3,
+      "employeesTogether": [
+        "E03",
+        "E15",
+        "E13"
+      ],
+      "pickupOrder": [
+        "E03",
+        "E15",
+        "E13"
+      ],
+      "dropOrder": [
+        "E03",
+        "E15",
+        "E13"
+      ],
+      "capacity": 3,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 3,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E03",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E15",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E13",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "dropoff",
+          "employeeId": "E03",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E15",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E13",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "vehicleId": "V02",
+      "groupSize": 3,
+      "employeesTogether": [
+        "E01",
+        "E04",
+        "E07"
+      ],
+      "pickupOrder": [
+        "E01",
+        "E04",
+        "E07"
+      ],
+      "dropOrder": [
+        "E04",
+        "E07",
+        "E01"
+      ],
+      "capacity": 3,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 3,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E01",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E04",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E07",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "dropoff",
+          "employeeId": "E04",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E07",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E01",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "vehicleId": "V03",
+      "groupSize": 4,
+      "employeesTogether": [
+        "E14",
+        "E05",
+        "E08",
+        "E09"
+      ],
+      "pickupOrder": [
+        "E14",
+        "E05",
+        "E08",
+        "E09"
+      ],
+      "dropOrder": [
+        "E09",
+        "E05",
+        "E08",
+        "E14"
+      ],
+      "capacity": 4,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 4,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E14",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E05",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E08",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "pickup",
+          "employeeId": "E09",
+          "onboardBefore": 3,
+          "onboardAfter": 4
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E09",
+          "onboardBefore": 4,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E05",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 7,
+          "type": "dropoff",
+          "employeeId": "E08",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 8,
+          "type": "dropoff",
+          "employeeId": "E14",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "vehicleId": "V05",
+      "groupSize": 1,
+      "employeesTogether": [
+        "E10"
+      ],
+      "pickupOrder": [
+        "E10"
+      ],
+      "dropOrder": [
+        "E10"
+      ],
+      "capacity": 1,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 1,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E10",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "dropoff",
+          "employeeId": "E10",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ],
+      "feasible": true
+    },
+    {
+      "vehicleId": "V06",
+      "groupSize": 4,
+      "employeesTogether": [
+        "E11",
+        "E06",
+        "E02",
+        "E12"
+      ],
+      "pickupOrder": [
+        "E11",
+        "E06",
+        "E02",
+        "E12"
+      ],
+      "dropOrder": [
+        "E12",
+        "E02",
+        "E06",
+        "E11"
+      ],
+      "capacity": 4,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 4,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E11",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E06",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E02",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "pickup",
+          "employeeId": "E12",
+          "onboardBefore": 3,
+          "onboardAfter": 4
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E12",
+          "onboardBefore": 4,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E02",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 7,
+          "type": "dropoff",
+          "employeeId": "E06",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 8,
+          "type": "dropoff",
+          "employeeId": "E11",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ],
+      "feasible": true
+    }
+  ],
+  "rideCapacityDetails": [
+    {
+      "vehicleId": "V01",
+      "capacity": 3,
+      "pathStops": 6,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 3,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E03",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E15",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E13",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "dropoff",
+          "employeeId": "E03",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E15",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E13",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ]
+    },
+    {
+      "vehicleId": "V02",
+      "capacity": 3,
+      "pathStops": 6,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 3,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E01",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E04",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E07",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "dropoff",
+          "employeeId": "E04",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E07",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E01",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ]
+    },
+    {
+      "vehicleId": "V03",
+      "capacity": 4,
+      "pathStops": 8,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 4,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E14",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E05",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E08",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "pickup",
+          "employeeId": "E09",
+          "onboardBefore": 3,
+          "onboardAfter": 4
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E09",
+          "onboardBefore": 4,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E05",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 7,
+          "type": "dropoff",
+          "employeeId": "E08",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 8,
+          "type": "dropoff",
+          "employeeId": "E14",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ]
+    },
+    {
+      "vehicleId": "V05",
+      "capacity": 1,
+      "pathStops": 2,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 1,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E10",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "dropoff",
+          "employeeId": "E10",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ]
+    },
+    {
+      "vehicleId": "V06",
+      "capacity": 4,
+      "pathStops": 8,
+      "tripCount": 1,
+      "maxConcurrentOnboard": 4,
+      "capacityViolated": false,
+      "stopOnboardTimeline": [
+        {
+          "stopIndex": 1,
+          "type": "pickup",
+          "employeeId": "E11",
+          "onboardBefore": 0,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 2,
+          "type": "pickup",
+          "employeeId": "E06",
+          "onboardBefore": 1,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 3,
+          "type": "pickup",
+          "employeeId": "E02",
+          "onboardBefore": 2,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 4,
+          "type": "pickup",
+          "employeeId": "E12",
+          "onboardBefore": 3,
+          "onboardAfter": 4
+        },
+        {
+          "stopIndex": 5,
+          "type": "dropoff",
+          "employeeId": "E12",
+          "onboardBefore": 4,
+          "onboardAfter": 3
+        },
+        {
+          "stopIndex": 6,
+          "type": "dropoff",
+          "employeeId": "E02",
+          "onboardBefore": 3,
+          "onboardAfter": 2
+        },
+        {
+          "stopIndex": 7,
+          "type": "dropoff",
+          "employeeId": "E06",
+          "onboardBefore": 2,
+          "onboardAfter": 1
+        },
+        {
+          "stopIndex": 8,
+          "type": "dropoff",
+          "employeeId": "E11",
+          "onboardBefore": 1,
+          "onboardAfter": 0
+        }
+      ]
+    }
+  ],
+  "result": {
+    "metrics": {
+      "totalSystemCost": 501.7716908825116,
+      "totalTimeMinutes": 133.53063396815253,
+      "totalDistanceKm": 41.003043977849835,
+      "baselineCost": 6450,
+      "baselineTimeMinutes": 775,
+      "savings": 5948.228309117489,
+      "savingsPercent": 92.22059393980602
+    },
+    "rides": [
+      {
+        "vehicleId": "V01",
+        "assignedEmployees": [
+          "E03",
+          "E15",
+          "E13"
+        ],
+        "availabilityMinute": 480,
+        "availabilityTime": "08:00",
+        "startMinute": 499.0469006287606,
+        "endMinute": 525.9633923837107,
+        "startTime": "08:19",
+        "endTime": "08:46",
+        "path": [
+          {
+            "index": 1,
+            "type": "pickup",
+            "employeeId": "E03",
+            "lat": 12.931,
+            "lng": 77.62,
+            "distanceFromPrevKm": 0.4447797065783835,
+            "travelMinutesFromPrev": 0.9530993712393933,
+            "departureMinute": 499.0469006287606,
+            "arrivalMinute": 500,
+            "departureTime": "08:19",
+            "arrivalTime": "08:20",
+            "loadBefore": 0,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [],
+            "employeesOnboardAfter": [
+              "E03"
+            ]
+          },
+          {
+            "index": 2,
+            "type": "pickup",
+            "employeeId": "E15",
+            "lat": 12.948,
+            "lng": 77.635,
+            "distanceFromPrevKm": 2.493143632899251,
+            "travelMinutesFromPrev": 5.342450641926966,
+            "departureMinute": 500,
+            "arrivalMinute": 515,
+            "departureTime": "08:20",
+            "arrivalTime": "08:35",
+            "loadBefore": 1,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E03"
+            ],
+            "employeesOnboardAfter": [
+              "E03",
+              "E15"
+            ]
+          },
+          {
+            "index": 3,
+            "type": "pickup",
+            "employeeId": "E13",
+            "lat": 12.955,
+            "lng": 77.62,
+            "distanceFromPrevKm": 1.8022419260406561,
+            "travelMinutesFromPrev": 3.8619469843728345,
+            "departureMinute": 515,
+            "arrivalMinute": 518.8619469843728,
+            "departureTime": "08:35",
+            "arrivalTime": "08:39",
+            "loadBefore": 2,
+            "loadAfter": 3,
+            "employeesOnboardBefore": [
+              "E03",
+              "E15"
+            ],
+            "employeesOnboardAfter": [
+              "E03",
+              "E15",
+              "E13"
+            ]
+          },
+          {
+            "index": 4,
+            "type": "dropoff",
+            "employeeId": "E03",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 3.3140078530243278,
+            "travelMinutesFromPrev": 7.101445399337845,
+            "departureMinute": 518.8619469843728,
+            "arrivalMinute": 525.9633923837107,
+            "departureTime": "08:39",
+            "arrivalTime": "08:46",
+            "loadBefore": 3,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E03",
+              "E15",
+              "E13"
+            ],
+            "employeesOnboardAfter": [
+              "E15",
+              "E13"
+            ]
+          },
+          {
+            "index": 5,
+            "type": "dropoff",
+            "employeeId": "E15",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 525.9633923837107,
+            "arrivalMinute": 525.9633923837107,
+            "departureTime": "08:46",
+            "arrivalTime": "08:46",
+            "loadBefore": 2,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [
+              "E15",
+              "E13"
+            ],
+            "employeesOnboardAfter": [
+              "E13"
+            ]
+          },
+          {
+            "index": 6,
+            "type": "dropoff",
+            "employeeId": "E13",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 525.9633923837107,
+            "arrivalMinute": 525.9633923837107,
+            "departureTime": "08:46",
+            "arrivalTime": "08:46",
+            "loadBefore": 1,
+            "loadAfter": 0,
+            "employeesOnboardBefore": [
+              "E13"
+            ],
+            "employeesOnboardAfter": []
+          }
+        ],
+        "stateTimeline": [
+          {
+            "state": "travel",
+            "startMinute": 499.0469006287606,
+            "endMinute": 500,
+            "startTime": "08:19",
+            "endTime": "08:20",
+            "employeesOnboard": []
+          },
+          {
+            "state": "occupied",
+            "startMinute": 500,
+            "endMinute": 505.342450641927,
+            "startTime": "08:20",
+            "endTime": "08:25",
+            "employeesOnboard": [
+              "E03"
+            ]
+          },
+          {
+            "state": "idle",
+            "startMinute": 505.342450641927,
+            "endMinute": 515,
+            "startTime": "08:25",
+            "endTime": "08:35",
+            "employeesOnboard": [
+              "E03"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 515,
+            "endMinute": 518.8619469843728,
+            "startTime": "08:35",
+            "endTime": "08:39",
+            "employeesOnboard": [
+              "E03",
+              "E15"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 518.8619469843728,
+            "endMinute": 525.9633923837107,
+            "startTime": "08:39",
+            "endTime": "08:46",
+            "employeesOnboard": [
+              "E03",
+              "E15",
+              "E13"
+            ]
+          }
+        ],
+        "timelineVerification": {
+          "isConsistent": true,
+          "stopCount": 6,
+          "errors": []
+        },
+        "metrics": {
+          "totalTimeMinutes": 26.916491754950073,
+          "totalDistance": 8.054173118542618,
+          "totalDistanceKm": 8.054173118542618,
+          "cost": 80.54173118542619,
+          "delayMinutes": 0,
+          "employeeDelayMinutes": {
+            "E03": 0,
+            "E15": 0,
+            "E13": 0
+          }
+        },
+        "feasible": true,
+        "violation": "",
+        "violations": [],
+        "consistencyErrors": [],
+        "penaltyBreakdown": {
+          "lateness": 0,
+          "capacity": 0,
+          "sharing": 0,
+          "premium": 0,
+          "precedence": 0,
+          "consistency": 0,
+          "infeasible": 0
+        },
+        "violationDetails": {}
+      },
+      {
+        "vehicleId": "V02",
+        "assignedEmployees": [
+          "E01",
+          "E04",
+          "E07"
+        ],
+        "availabilityMinute": 480,
+        "availabilityTime": "08:00",
+        "startMinute": 489.2204293560189,
+        "endMinute": 536.2062687311603,
+        "startTime": "08:09",
+        "endTime": "08:56",
+        "path": [
+          {
+            "index": 1,
+            "type": "pickup",
+            "employeeId": "E01",
+            "lat": 12.9365,
+            "lng": 77.6248,
+            "distanceFromPrevKm": 0.3897853219905717,
+            "travelMinutesFromPrev": 0.7795706439811434,
+            "departureMinute": 489.2204293560189,
+            "arrivalMinute": 490,
+            "departureTime": "08:09",
+            "arrivalTime": "08:10",
+            "loadBefore": 0,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [],
+            "employeesOnboardAfter": [
+              "E01"
+            ]
+          },
+          {
+            "index": 2,
+            "type": "pickup",
+            "employeeId": "E04",
+            "lat": 12.94,
+            "lng": 77.63,
+            "distanceFromPrevKm": 0.684860036371812,
+            "travelMinutesFromPrev": 1.369720072743624,
+            "departureMinute": 490,
+            "arrivalMinute": 525,
+            "departureTime": "08:10",
+            "arrivalTime": "08:45",
+            "loadBefore": 1,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E01"
+            ],
+            "employeesOnboardAfter": [
+              "E01",
+              "E04"
+            ]
+          },
+          {
+            "index": 3,
+            "type": "pickup",
+            "employeeId": "E07",
+            "lat": 12.9525,
+            "lng": 77.628,
+            "distanceFromPrevKm": 1.4067332964757306,
+            "travelMinutesFromPrev": 2.8134665929514613,
+            "departureMinute": 525,
+            "arrivalMinute": 527.8134665929515,
+            "departureTime": "08:45",
+            "arrivalTime": "08:48",
+            "loadBefore": 2,
+            "loadAfter": 3,
+            "employeesOnboardBefore": [
+              "E01",
+              "E04"
+            ],
+            "employeesOnboardAfter": [
+              "E01",
+              "E04",
+              "E07"
+            ]
+          },
+          {
+            "index": 4,
+            "type": "dropoff",
+            "employeeId": "E04",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 4.196401069104419,
+            "travelMinutesFromPrev": 8.392802138208838,
+            "departureMinute": 527.8134665929515,
+            "arrivalMinute": 536.2062687311603,
+            "departureTime": "08:48",
+            "arrivalTime": "08:56",
+            "loadBefore": 3,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E01",
+              "E04",
+              "E07"
+            ],
+            "employeesOnboardAfter": [
+              "E01",
+              "E07"
+            ]
+          },
+          {
+            "index": 5,
+            "type": "dropoff",
+            "employeeId": "E07",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 536.2062687311603,
+            "arrivalMinute": 536.2062687311603,
+            "departureTime": "08:56",
+            "arrivalTime": "08:56",
+            "loadBefore": 2,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [
+              "E01",
+              "E07"
+            ],
+            "employeesOnboardAfter": [
+              "E01"
+            ]
+          },
+          {
+            "index": 6,
+            "type": "dropoff",
+            "employeeId": "E01",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 536.2062687311603,
+            "arrivalMinute": 536.2062687311603,
+            "departureTime": "08:56",
+            "arrivalTime": "08:56",
+            "loadBefore": 1,
+            "loadAfter": 0,
+            "employeesOnboardBefore": [
+              "E01"
+            ],
+            "employeesOnboardAfter": []
+          }
+        ],
+        "stateTimeline": [
+          {
+            "state": "travel",
+            "startMinute": 489.2204293560189,
+            "endMinute": 490,
+            "startTime": "08:09",
+            "endTime": "08:10",
+            "employeesOnboard": []
+          },
+          {
+            "state": "occupied",
+            "startMinute": 490,
+            "endMinute": 491.36972007274363,
+            "startTime": "08:10",
+            "endTime": "08:11",
+            "employeesOnboard": [
+              "E01"
+            ]
+          },
+          {
+            "state": "idle",
+            "startMinute": 491.36972007274363,
+            "endMinute": 525,
+            "startTime": "08:11",
+            "endTime": "08:45",
+            "employeesOnboard": [
+              "E01"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 525,
+            "endMinute": 527.8134665929515,
+            "startTime": "08:45",
+            "endTime": "08:48",
+            "employeesOnboard": [
+              "E01",
+              "E04"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 527.8134665929515,
+            "endMinute": 536.2062687311603,
+            "startTime": "08:48",
+            "endTime": "08:56",
+            "employeesOnboard": [
+              "E01",
+              "E04",
+              "E07"
+            ]
+          }
+        ],
+        "timelineVerification": {
+          "isConsistent": true,
+          "stopCount": 6,
+          "errors": []
+        },
+        "metrics": {
+          "totalTimeMinutes": 46.98583937514144,
+          "totalDistance": 6.677779723942534,
+          "totalDistanceKm": 6.677779723942534,
+          "cost": 73.45557696336788,
+          "delayMinutes": 0,
+          "employeeDelayMinutes": {
+            "E04": 0,
+            "E07": 0,
+            "E01": 0
+          }
+        },
+        "feasible": true,
+        "violation": "",
+        "violations": [],
+        "consistencyErrors": [],
+        "penaltyBreakdown": {
+          "lateness": 0,
+          "capacity": 0,
+          "sharing": 0,
+          "premium": 0,
+          "precedence": 0,
+          "consistency": 0,
+          "infeasible": 0
+        },
+        "violationDetails": {}
+      },
+      {
+        "vehicleId": "V03",
+        "assignedEmployees": [
+          "E14",
+          "E05",
+          "E08",
+          "E09"
+        ],
+        "availabilityMinute": 480,
+        "availabilityTime": "08:00",
+        "startMinute": 584.5823708387386,
+        "endMinute": 608.9301196798924,
+        "startTime": "09:45",
+        "endTime": "10:09",
+        "path": [
+          {
+            "index": 1,
+            "type": "pickup",
+            "employeeId": "E14",
+            "lat": 12.919,
+            "lng": 77.608,
+            "distanceFromPrevKm": 0.24361701073582542,
+            "travelMinutesFromPrev": 0.41762916126141497,
+            "departureMinute": 584.5823708387386,
+            "arrivalMinute": 585,
+            "departureTime": "09:45",
+            "arrivalTime": "09:45",
+            "loadBefore": 0,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [],
+            "employeesOnboardAfter": [
+              "E14"
+            ]
+          },
+          {
+            "index": 2,
+            "type": "pickup",
+            "employeeId": "E05",
+            "lat": 12.918,
+            "lng": 77.61,
+            "distanceFromPrevKm": 0.24361778285494481,
+            "travelMinutesFromPrev": 0.41763048489419113,
+            "departureMinute": 585,
+            "arrivalMinute": 585.4176304848942,
+            "departureTime": "09:45",
+            "arrivalTime": "09:45",
+            "loadBefore": 1,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E14"
+            ],
+            "employeesOnboardAfter": [
+              "E14",
+              "E05"
+            ]
+          },
+          {
+            "index": 3,
+            "type": "pickup",
+            "employeeId": "E08",
+            "lat": 12.927,
+            "lng": 77.642,
+            "distanceFromPrevKm": 3.6096210200542345,
+            "travelMinutesFromPrev": 6.187921748664402,
+            "departureMinute": 585.4176304848942,
+            "arrivalMinute": 591.6055522335586,
+            "departureTime": "09:45",
+            "arrivalTime": "09:52",
+            "loadBefore": 2,
+            "loadAfter": 3,
+            "employeesOnboardBefore": [
+              "E14",
+              "E05"
+            ],
+            "employeesOnboardAfter": [
+              "E14",
+              "E05",
+              "E08"
+            ]
+          },
+          {
+            "index": 4,
+            "type": "pickup",
+            "employeeId": "E09",
+            "lat": 12.941,
+            "lng": 77.631,
+            "distanceFromPrevKm": 1.9607484038168992,
+            "travelMinutesFromPrev": 3.361282977971827,
+            "departureMinute": 591.6055522335586,
+            "arrivalMinute": 600,
+            "departureTime": "09:52",
+            "arrivalTime": "10:00",
+            "loadBefore": 3,
+            "loadAfter": 4,
+            "employeesOnboardBefore": [
+              "E14",
+              "E05",
+              "E08"
+            ],
+            "employeesOnboardAfter": [
+              "E14",
+              "E05",
+              "E08",
+              "E09"
+            ]
+          },
+          {
+            "index": 5,
+            "type": "dropoff",
+            "employeeId": "E09",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 5.20923647993724,
+            "travelMinutesFromPrev": 8.930119679892412,
+            "departureMinute": 600,
+            "arrivalMinute": 608.9301196798924,
+            "departureTime": "10:00",
+            "arrivalTime": "10:09",
+            "loadBefore": 4,
+            "loadAfter": 3,
+            "employeesOnboardBefore": [
+              "E14",
+              "E05",
+              "E08",
+              "E09"
+            ],
+            "employeesOnboardAfter": [
+              "E14",
+              "E05",
+              "E08"
+            ]
+          },
+          {
+            "index": 6,
+            "type": "dropoff",
+            "employeeId": "E05",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 608.9301196798924,
+            "arrivalMinute": 608.9301196798924,
+            "departureTime": "10:09",
+            "arrivalTime": "10:09",
+            "loadBefore": 3,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E14",
+              "E05",
+              "E08"
+            ],
+            "employeesOnboardAfter": [
+              "E14",
+              "E08"
+            ]
+          },
+          {
+            "index": 7,
+            "type": "dropoff",
+            "employeeId": "E08",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 608.9301196798924,
+            "arrivalMinute": 608.9301196798924,
+            "departureTime": "10:09",
+            "arrivalTime": "10:09",
+            "loadBefore": 2,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [
+              "E14",
+              "E08"
+            ],
+            "employeesOnboardAfter": [
+              "E14"
+            ]
+          },
+          {
+            "index": 8,
+            "type": "dropoff",
+            "employeeId": "E14",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 608.9301196798924,
+            "arrivalMinute": 608.9301196798924,
+            "departureTime": "10:09",
+            "arrivalTime": "10:09",
+            "loadBefore": 1,
+            "loadAfter": 0,
+            "employeesOnboardBefore": [
+              "E14"
+            ],
+            "employeesOnboardAfter": []
+          }
+        ],
+        "stateTimeline": [
+          {
+            "state": "travel",
+            "startMinute": 584.5823708387386,
+            "endMinute": 585,
+            "startTime": "09:45",
+            "endTime": "09:45",
+            "employeesOnboard": []
+          },
+          {
+            "state": "occupied",
+            "startMinute": 585,
+            "endMinute": 585.4176304848942,
+            "startTime": "09:45",
+            "endTime": "09:45",
+            "employeesOnboard": [
+              "E14"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 585.4176304848942,
+            "endMinute": 591.6055522335586,
+            "startTime": "09:45",
+            "endTime": "09:52",
+            "employeesOnboard": [
+              "E14",
+              "E05"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 591.6055522335586,
+            "endMinute": 594.9668352115305,
+            "startTime": "09:52",
+            "endTime": "09:55",
+            "employeesOnboard": [
+              "E14",
+              "E05",
+              "E08"
+            ]
+          },
+          {
+            "state": "idle",
+            "startMinute": 594.9668352115305,
+            "endMinute": 600,
+            "startTime": "09:55",
+            "endTime": "10:00",
+            "employeesOnboard": [
+              "E14",
+              "E05",
+              "E08"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 600,
+            "endMinute": 608.9301196798924,
+            "startTime": "10:00",
+            "endTime": "10:09",
+            "employeesOnboard": [
+              "E14",
+              "E05",
+              "E08",
+              "E09"
+            ]
+          }
+        ],
+        "timelineVerification": {
+          "isConsistent": true,
+          "stopCount": 8,
+          "errors": []
+        },
+        "metrics": {
+          "totalTimeMinutes": 24.347748841153816,
+          "totalDistance": 11.266840697399143,
+          "totalDistanceKm": 11.266840697399143,
+          "cost": 169.00261046098714,
+          "delayMinutes": 0,
+          "employeeDelayMinutes": {
+            "E09": 0,
+            "E05": 0,
+            "E08": 0,
+            "E14": 0
+          }
+        },
+        "feasible": true,
+        "violation": "",
+        "violations": [],
+        "consistencyErrors": [],
+        "penaltyBreakdown": {
+          "lateness": 0,
+          "capacity": 0,
+          "sharing": 0,
+          "premium": 0,
+          "precedence": 0,
+          "consistency": 0,
+          "infeasible": 0
+        },
+        "violationDetails": {}
+      },
+      {
+        "vehicleId": "V05",
+        "assignedEmployees": [
+          "E10"
+        ],
+        "availabilityMinute": 480,
+        "availabilityTime": "08:00",
+        "startMinute": 570,
+        "endMinute": 577.4494604425684,
+        "startTime": "09:30",
+        "endTime": "09:37",
+        "path": [
+          {
+            "index": 1,
+            "type": "pickup",
+            "employeeId": "E10",
+            "lat": 12.925,
+            "lng": 77.6,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 570,
+            "arrivalMinute": 570,
+            "departureTime": "09:30",
+            "arrivalTime": "09:30",
+            "loadBefore": 0,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [],
+            "employeesOnboardAfter": [
+              "E10"
+            ]
+          },
+          {
+            "index": 2,
+            "type": "dropoff",
+            "employeeId": "E10",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 5.214622309797842,
+            "travelMinutesFromPrev": 7.449460442568345,
+            "departureMinute": 570,
+            "arrivalMinute": 577.4494604425684,
+            "departureTime": "09:30",
+            "arrivalTime": "09:37",
+            "loadBefore": 1,
+            "loadAfter": 0,
+            "employeesOnboardBefore": [
+              "E10"
+            ],
+            "employeesOnboardAfter": []
+          }
+        ],
+        "stateTimeline": [
+          {
+            "state": "occupied",
+            "startMinute": 570,
+            "endMinute": 577.4494604425684,
+            "startTime": "09:30",
+            "endTime": "09:37",
+            "employeesOnboard": [
+              "E10"
+            ]
+          }
+        ],
+        "timelineVerification": {
+          "isConsistent": true,
+          "stopCount": 2,
+          "errors": []
+        },
+        "metrics": {
+          "totalTimeMinutes": 7.449460442568352,
+          "totalDistance": 5.214622309797842,
+          "totalDistanceKm": 5.214622309797842,
+          "cost": 41.716978478382735,
+          "delayMinutes": 0,
+          "employeeDelayMinutes": {
+            "E10": 0
+          }
+        },
+        "feasible": true,
+        "violation": "",
+        "violations": [],
+        "consistencyErrors": [],
+        "penaltyBreakdown": {
+          "lateness": 0,
+          "capacity": 0,
+          "sharing": 0,
+          "premium": 0,
+          "precedence": 0,
+          "consistency": 0,
+          "infeasible": 0
+        },
+        "violationDetails": {}
+      },
+      {
+        "vehicleId": "V06",
+        "assignedEmployees": [
+          "E11",
+          "E06",
+          "E02",
+          "E12"
+        ],
+        "availabilityMinute": 490,
+        "availabilityTime": "08:10",
+        "startMinute": 520,
+        "endMinute": 547.8310935543388,
+        "startTime": "08:40",
+        "endTime": "09:08",
+        "path": [
+          {
+            "index": 1,
+            "type": "pickup",
+            "employeeId": "E11",
+            "lat": 12.96,
+            "lng": 77.64,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 520,
+            "arrivalMinute": 520,
+            "departureTime": "08:40",
+            "arrivalTime": "08:40",
+            "loadBefore": 0,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [],
+            "employeesOnboardAfter": [
+              "E11"
+            ]
+          },
+          {
+            "index": 2,
+            "type": "pickup",
+            "employeeId": "E06",
+            "lat": 12.95,
+            "lng": 77.635,
+            "distanceFromPrevKm": 1.2369330789110595,
+            "travelMinutesFromPrev": 2.182823080431281,
+            "departureMinute": 520,
+            "arrivalMinute": 522.1828230804313,
+            "departureTime": "08:40",
+            "arrivalTime": "08:42",
+            "loadBefore": 1,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E11"
+            ],
+            "employeesOnboardAfter": [
+              "E11",
+              "E06"
+            ]
+          },
+          {
+            "index": 3,
+            "type": "pickup",
+            "employeeId": "E02",
+            "lat": 12.934,
+            "lng": 77.622,
+            "distanceFromPrevKm": 2.269365419354475,
+            "travelMinutesFromPrev": 4.004762504743191,
+            "departureMinute": 522.1828230804313,
+            "arrivalMinute": 526.1875855851745,
+            "departureTime": "08:42",
+            "arrivalTime": "08:46",
+            "loadBefore": 2,
+            "loadAfter": 3,
+            "employeesOnboardBefore": [
+              "E11",
+              "E06"
+            ],
+            "employeesOnboardAfter": [
+              "E11",
+              "E06",
+              "E02"
+            ]
+          },
+          {
+            "index": 4,
+            "type": "pickup",
+            "employeeId": "E12",
+            "lat": 12.933,
+            "lng": 77.605,
+            "distanceFromPrevKm": 1.845709949110168,
+            "travelMinutesFromPrev": 3.2571352043120614,
+            "departureMinute": 526.1875855851745,
+            "arrivalMinute": 540,
+            "departureTime": "08:46",
+            "arrivalTime": "09:00",
+            "loadBefore": 3,
+            "loadAfter": 4,
+            "employeesOnboardBefore": [
+              "E11",
+              "E06",
+              "E02"
+            ],
+            "employeesOnboardAfter": [
+              "E11",
+              "E06",
+              "E02",
+              "E12"
+            ]
+          },
+          {
+            "index": 5,
+            "type": "dropoff",
+            "employeeId": "E12",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 4.437619680791994,
+            "travelMinutesFromPrev": 7.831093554338812,
+            "departureMinute": 540,
+            "arrivalMinute": 547.8310935543388,
+            "departureTime": "09:00",
+            "arrivalTime": "09:08",
+            "loadBefore": 4,
+            "loadAfter": 3,
+            "employeesOnboardBefore": [
+              "E11",
+              "E06",
+              "E02",
+              "E12"
+            ],
+            "employeesOnboardAfter": [
+              "E11",
+              "E06",
+              "E02"
+            ]
+          },
+          {
+            "index": 6,
+            "type": "dropoff",
+            "employeeId": "E02",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 547.8310935543388,
+            "arrivalMinute": 547.8310935543388,
+            "departureTime": "09:08",
+            "arrivalTime": "09:08",
+            "loadBefore": 3,
+            "loadAfter": 2,
+            "employeesOnboardBefore": [
+              "E11",
+              "E06",
+              "E02"
+            ],
+            "employeesOnboardAfter": [
+              "E11",
+              "E06"
+            ]
+          },
+          {
+            "index": 7,
+            "type": "dropoff",
+            "employeeId": "E06",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 547.8310935543388,
+            "arrivalMinute": 547.8310935543388,
+            "departureTime": "09:08",
+            "arrivalTime": "09:08",
+            "loadBefore": 2,
+            "loadAfter": 1,
+            "employeesOnboardBefore": [
+              "E11",
+              "E06"
+            ],
+            "employeesOnboardAfter": [
+              "E11"
+            ]
+          },
+          {
+            "index": 8,
+            "type": "dropoff",
+            "employeeId": "E11",
+            "lat": 12.9716,
+            "lng": 77.5946,
+            "distanceFromPrevKm": 0,
+            "travelMinutesFromPrev": 0,
+            "departureMinute": 547.8310935543388,
+            "arrivalMinute": 547.8310935543388,
+            "departureTime": "09:08",
+            "arrivalTime": "09:08",
+            "loadBefore": 1,
+            "loadAfter": 0,
+            "employeesOnboardBefore": [
+              "E11"
+            ],
+            "employeesOnboardAfter": []
+          }
+        ],
+        "stateTimeline": [
+          {
+            "state": "occupied",
+            "startMinute": 520,
+            "endMinute": 522.1828230804313,
+            "startTime": "08:40",
+            "endTime": "08:42",
+            "employeesOnboard": [
+              "E11"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 522.1828230804313,
+            "endMinute": 526.1875855851745,
+            "startTime": "08:42",
+            "endTime": "08:46",
+            "employeesOnboard": [
+              "E11",
+              "E06"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 526.1875855851745,
+            "endMinute": 529.4447207894865,
+            "startTime": "08:46",
+            "endTime": "08:49",
+            "employeesOnboard": [
+              "E11",
+              "E06",
+              "E02"
+            ]
+          },
+          {
+            "state": "idle",
+            "startMinute": 529.4447207894865,
+            "endMinute": 540,
+            "startTime": "08:49",
+            "endTime": "09:00",
+            "employeesOnboard": [
+              "E11",
+              "E06",
+              "E02"
+            ]
+          },
+          {
+            "state": "occupied",
+            "startMinute": 540,
+            "endMinute": 547.8310935543388,
+            "startTime": "09:00",
+            "endTime": "09:08",
+            "employeesOnboard": [
+              "E11",
+              "E06",
+              "E02",
+              "E12"
+            ]
+          }
+        ],
+        "timelineVerification": {
+          "isConsistent": true,
+          "stopCount": 8,
+          "errors": []
+        },
+        "metrics": {
+          "totalTimeMinutes": 27.83109355433885,
+          "totalDistance": 9.789628128167697,
+          "totalDistanceKm": 9.789628128167697,
+          "cost": 137.05479379434775,
+          "delayMinutes": 0,
+          "employeeDelayMinutes": {
+            "E12": 0,
+            "E02": 0,
+            "E06": 0,
+            "E11": 0
+          }
+        },
+        "feasible": true,
+        "violation": "",
+        "violations": [],
+        "consistencyErrors": [],
+        "penaltyBreakdown": {
+          "lateness": 0,
+          "capacity": 0,
+          "sharing": 0,
+          "premium": 0,
+          "precedence": 0,
+          "consistency": 0,
+          "infeasible": 0
+        },
+        "violationDetails": {}
+      }
+    ],
+    "unassigned": [],
+    "objectiveScore": 317.6511624253321,
+    "structuralHash": "8a7946332ca0142b3e8aa1a1acb2c84a93c4d6d35f9150712e445e9c7d4ca2eb",
+    "penaltyBreakdown": {
+      "lateness": 0,
+      "capacity": 0,
+      "sharing": 0,
+      "premium": 0,
+      "precedence": 0,
+      "consistency": 0,
+      "infeasible": 0,
+      "unassigned": 0
+    },
+    "routePenaltyBreakdown": {
+      "V01": {
+        "lateness": 0,
+        "capacity": 0,
+        "sharing": 0,
+        "premium": 0,
+        "precedence": 0,
+        "consistency": 0,
+        "infeasible": 0
+      },
+      "V02": {
+        "lateness": 0,
+        "capacity": 0,
+        "sharing": 0,
+        "premium": 0,
+        "precedence": 0,
+        "consistency": 0,
+        "infeasible": 0
+      },
+      "V03": {
+        "lateness": 0,
+        "capacity": 0,
+        "sharing": 0,
+        "premium": 0,
+        "precedence": 0,
+        "consistency": 0,
+        "infeasible": 0
+      },
+      "V04": {
+        "lateness": 0,
+        "capacity": 0,
+        "sharing": 0,
+        "premium": 0,
+        "precedence": 0,
+        "consistency": 0,
+        "infeasible": 0
+      },
+      "V05": {
+        "lateness": 0,
+        "capacity": 0,
+        "sharing": 0,
+        "premium": 0,
+        "precedence": 0,
+        "consistency": 0,
+        "infeasible": 0
+      },
+      "V06": {
+        "lateness": 0,
+        "capacity": 0,
+        "sharing": 0,
+        "premium": 0,
+        "precedence": 0,
+        "consistency": 0,
+        "infeasible": 0
+      }
+    },
+    "violations": [],
+    "consistencyErrors": [],
+    "solverMetadata": {
+      "runId": 2,
+      "strategy": "Chaos",
+      "durationSeconds": 33.27669516694732,
+      "runtimeSec": 33.27669516694732,
+      "seed": 143470,
+      "alnsIterations": 10,
+      "timeLimitSec": 25,
+      "maxRunSeconds": 25,
+      "minRuntimeSec": 4,
+      "generationsPlanned": 531,
+      "generationsExecuted": 0,
+      "terminatedEarly": true,
+      "terminationReason": "time_limit",
+      "stopReason": "time_limit",
+      "lastImprovementGeneration": 0,
+      "stagnationLimit": 64,
+      "restartCount": 0,
+      "eliteSize": 3,
+      "bestStructuralHash": "8a7946332ca0142b3e8aa1a1acb2c84a93c4d6d35f9150712e445e9c7d4ca2eb",
+      "bestPenaltyBreakdown": {
+        "lateness": 0,
+        "capacity": 0,
+        "sharing": 0,
+        "premium": 0,
+        "precedence": 0,
+        "consistency": 0,
+        "infeasible": 0,
+        "unassigned": 0
+      },
+      "avgDiversityRatio": 1,
+      "minDiversityRatio": 1,
+      "assignmentSeed": {
+        "backend": "greedy_fallback",
+        "status": "partial",
+        "unassigned": 4,
+        "solveTimeSec": 0.00019500008784234524
+      },
+      "routePoolStats": {
+        "enabled": false
+      },
+      "setPartitionStats": {
+        "enabled": false
+      },
+      "heuristicBestObjective": 317.6511624253321,
+      "exactSelectedObjective": null,
+      "finalBestSource": "heuristic",
+      "lambdaDivFinal": 0.3,
+      "mipProbe": {
+        "status": "not_run",
+        "gap": null,
+        "durationSec": 0
+      },
+      "bestHistory": [
+        [
+          33.276,
+          317.6511624253321
+        ],
+        [
+          33.277,
+          317.6511624253321
+        ]
+      ],
+      "diversityHistory": [
+        [
+          33.276,
+          1
+        ],
+        [
+          33.277,
+          1
+        ]
+      ],
+      "stopController": {
+        "time_limit_sec": 25,
+        "min_runtime_sec": 4,
+        "checkpoint_every_sec": 2,
+        "eps_rel": 0.001,
+        "stall_checkpoints": 4,
+        "diversity_min": 0.15,
+        "burst_sec": 3,
+        "mip_probe_time_sec": 5,
+        "mip_gap_tol": 0.005
+      },
+      "alnsOperatorStats": {
+        "destroy": {
+          "random": 1,
+          "worst": 1,
+          "related": 1,
+          "route": 1
+        },
+        "repair": {
+          "greedy": 1,
+          "regret2": 1,
+          "regret3": 1
+        },
+        "destroy_stats": {
+          "random": {
+            "uses": 0,
+            "accepted": 0,
+            "improved_current": 0,
+            "improved_best": 0,
+            "avg_delta": 0,
+            "feasibility_rate": 0,
+            "failure_rate": 0
+          },
+          "worst": {
+            "uses": 0,
+            "accepted": 0,
+            "improved_current": 0,
+            "improved_best": 0,
+            "avg_delta": 0,
+            "feasibility_rate": 0,
+            "failure_rate": 0
+          },
+          "related": {
+            "uses": 0,
+            "accepted": 0,
+            "improved_current": 0,
+            "improved_best": 0,
+            "avg_delta": 0,
+            "feasibility_rate": 0,
+            "failure_rate": 0
+          },
+          "route": {
+            "uses": 0,
+            "accepted": 0,
+            "improved_current": 0,
+            "improved_best": 0,
+            "avg_delta": 0,
+            "feasibility_rate": 0,
+            "failure_rate": 0
+          }
+        },
+        "repair_stats": {
+          "greedy": {
+            "uses": 0,
+            "accepted": 0,
+            "improved_current": 0,
+            "improved_best": 0,
+            "avg_delta": 0,
+            "feasibility_rate": 0,
+            "failure_rate": 0
+          },
+          "regret2": {
+            "uses": 0,
+            "accepted": 0,
+            "improved_current": 0,
+            "improved_best": 0,
+            "avg_delta": 0,
+            "feasibility_rate": 0,
+            "failure_rate": 0
+          },
+          "regret3": {
+            "uses": 0,
+            "accepted": 0,
+            "improved_current": 0,
+            "improved_best": 0,
+            "avg_delta": 0,
+            "feasibility_rate": 0,
+            "failure_rate": 0
+          }
+        }
+      },
+      "configSnapshot": {
+        "seed": 143470,
+        "generations": 531,
+        "population": 78,
+        "alns_iterations": 10,
+        "elite_size": 3,
+        "stagnation_limit": 64,
+        "route_pool_enabled": true,
+        "route_pool_max_routes": 700,
+        "set_partition_time_limit_sec": 14,
+        "set_partition_iter_limit": 4,
+        "stop_controller": {
+          "time_limit_sec": 25,
+          "min_runtime_sec": 4,
+          "checkpoint_every_sec": 2,
+          "eps_rel": 0.001,
+          "stall_checkpoints": 4,
+          "diversity_min": 0.15,
+          "burst_sec": 3,
+          "mip_probe_time_sec": 5,
+          "mip_gap_tol": 0.005
+        },
+        "early_stop_enabled": true,
+        "lambda_diversity": 0.3
+      }
+    },
+    "solverRuns": [
+      {
+        "runId": 2,
+        "strategy": "Chaos",
+        "seed": 143470,
+        "objectiveScore": 317.6511624253321,
+        "structuralHash": "8a7946332ca0142b3e8aa1a1acb2c84a93c4d6d35f9150712e445e9c7d4ca2eb",
+        "totalSystemCost": 501.7716908825116,
+        "totalTimeMinutes": 133.53063396815253,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 33.27669516694732,
+        "durationMs": 33277,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 33.27669516694732
+      },
+      {
+        "runId": 6,
+        "strategy": "Hybrid",
+        "seed": 183498,
+        "objectiveScore": 320.52238568411894,
+        "structuralHash": "c935cf0802861ca16da3bf7da4ac31e5430a1713b55c95257928388c2f53cb8c",
+        "totalSystemCost": 500.7526829331212,
+        "totalTimeMinutes": 140.29208843511663,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 50.835186291020364,
+        "durationMs": 50835,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 50.835186291020364
+      },
+      {
+        "runId": 4,
+        "strategy": "Explore",
+        "seed": 163484,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "e9623fc1ce5a333aeec74a9dd8e3cb3ff1a8ab7158eee36c39d62e293e70a165",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 30.146964750019833,
+        "durationMs": 30147,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 30.146964750019833
+      },
+      {
+        "runId": 12,
+        "strategy": "Explore",
+        "seed": 243540,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "3f639ec79ed6df356f0cc8152862b3c33ba13f8fc7610d2b00af7d6b3919b7b9",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 32.494060666067526,
+        "durationMs": 32494,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 32.494060666067526
+      },
+      {
+        "runId": 8,
+        "strategy": "Spec-B",
+        "seed": 203512,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "24cb4bd459c6ae79efd40496204635e82978dc9d1f0273d163324c6134edf786",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 34.07582204090431,
+        "durationMs": 34076,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 34.07582204090431
+      },
+      {
+        "runId": 10,
+        "strategy": "Chaos",
+        "seed": 223526,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "98b2cf22dbe8b3f915e752c74ee23c51e3c50bbc42af33e9783bdcb8995fa479",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 33.053571375086904,
+        "durationMs": 33054,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 33.053571375086904
+      },
+      {
+        "runId": 5,
+        "strategy": "Balance",
+        "seed": 173491,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "f2b8bf2f6af3460da5fd966739125a7ef454d2dc63c16632fd164a7e535ef5d7",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 38.84467125008814,
+        "durationMs": 38845,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 38.84467125008814
+      },
+      {
+        "runId": 11,
+        "strategy": "Sniper",
+        "seed": 233533,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "4875bfddfb613a509ea6fbd0aa455108e549b1a15916c0b64831c79674a6906f",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 39.73204549984075,
+        "durationMs": 39732,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 39.73204549984075
+      },
+      {
+        "runId": 3,
+        "strategy": "Sniper",
+        "seed": 153477,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "5d4fff3cad8c8d5a2bc2f7f01db978d711ffacb0ea440a46e73b64889037b1b4",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 40.96924724988639,
+        "durationMs": 40969,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 40.96924724988639
+      },
+      {
+        "runId": 13,
+        "strategy": "Balance",
+        "seed": 253547,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "343c738c5f17d305b111a3e3d26fbeb4524367b894648490ad6516a2b8dbd8fe",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 41.358233915874735,
+        "durationMs": 41358,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 41.358233915874735
+      },
+      {
+        "runId": 7,
+        "strategy": "Spec-A",
+        "seed": 193505,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "dcdefba3f9e58017da35710eb5a70f11ba3572ebaf475cf2cef038d8bbd36447",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 43.89634404098615,
+        "durationMs": 43896,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 43.89634404098615
+      },
+      {
+        "runId": 1,
+        "strategy": "Logic",
+        "seed": 133463,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "24cb4bd459c6ae79efd40496204635e82978dc9d1f0273d163324c6134edf786",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 58.11104966606945,
+        "durationMs": 58111,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 58.11104966606945
+      },
+      {
+        "runId": 9,
+        "strategy": "Logic",
+        "seed": 213519,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "98b2cf22dbe8b3f915e752c74ee23c51e3c50bbc42af33e9783bdcb8995fa479",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 57.799664665944874,
+        "durationMs": 57800,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 57.799664665944874
+      },
+      {
+        "runId": 14,
+        "strategy": "Hybrid",
+        "seed": 263554,
+        "objectiveScore": 340.40251466201653,
+        "structuralHash": "6bfe4196fd1aff1e50d1bc520d9b0bf6a2d29ddabc29b513e7563f541fdfb537",
+        "totalSystemCost": 586.1766295249349,
+        "totalTimeMinutes": 94.62839979909819,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 49.17017333395779,
+        "durationMs": 49170,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 49.17017333395779
+      }
+    ],
+    "solverRunsByOrder": [
+      {
+        "runId": 1,
+        "strategy": "Logic",
+        "seed": 133463,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "24cb4bd459c6ae79efd40496204635e82978dc9d1f0273d163324c6134edf786",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 58.11104966606945,
+        "durationMs": 58111,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 58.11104966606945
+      },
+      {
+        "runId": 2,
+        "strategy": "Chaos",
+        "seed": 143470,
+        "objectiveScore": 317.6511624253321,
+        "structuralHash": "8a7946332ca0142b3e8aa1a1acb2c84a93c4d6d35f9150712e445e9c7d4ca2eb",
+        "totalSystemCost": 501.7716908825116,
+        "totalTimeMinutes": 133.53063396815253,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 33.27669516694732,
+        "durationMs": 33277,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 33.27669516694732
+      },
+      {
+        "runId": 3,
+        "strategy": "Sniper",
+        "seed": 153477,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "5d4fff3cad8c8d5a2bc2f7f01db978d711ffacb0ea440a46e73b64889037b1b4",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 40.96924724988639,
+        "durationMs": 40969,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 40.96924724988639
+      },
+      {
+        "runId": 4,
+        "strategy": "Explore",
+        "seed": 163484,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "e9623fc1ce5a333aeec74a9dd8e3cb3ff1a8ab7158eee36c39d62e293e70a165",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 30.146964750019833,
+        "durationMs": 30147,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 30.146964750019833
+      },
+      {
+        "runId": 5,
+        "strategy": "Balance",
+        "seed": 173491,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "f2b8bf2f6af3460da5fd966739125a7ef454d2dc63c16632fd164a7e535ef5d7",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 38.84467125008814,
+        "durationMs": 38845,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 38.84467125008814
+      },
+      {
+        "runId": 6,
+        "strategy": "Hybrid",
+        "seed": 183498,
+        "objectiveScore": 320.52238568411894,
+        "structuralHash": "c935cf0802861ca16da3bf7da4ac31e5430a1713b55c95257928388c2f53cb8c",
+        "totalSystemCost": 500.7526829331212,
+        "totalTimeMinutes": 140.29208843511663,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 50.835186291020364,
+        "durationMs": 50835,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 50.835186291020364
+      },
+      {
+        "runId": 7,
+        "strategy": "Spec-A",
+        "seed": 193505,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "dcdefba3f9e58017da35710eb5a70f11ba3572ebaf475cf2cef038d8bbd36447",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 43.89634404098615,
+        "durationMs": 43896,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 43.89634404098615
+      },
+      {
+        "runId": 8,
+        "strategy": "Spec-B",
+        "seed": 203512,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "24cb4bd459c6ae79efd40496204635e82978dc9d1f0273d163324c6134edf786",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 34.07582204090431,
+        "durationMs": 34076,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 34.07582204090431
+      },
+      {
+        "runId": 9,
+        "strategy": "Logic",
+        "seed": 213519,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "98b2cf22dbe8b3f915e752c74ee23c51e3c50bbc42af33e9783bdcb8995fa479",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 57.799664665944874,
+        "durationMs": 57800,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 57.799664665944874
+      },
+      {
+        "runId": 10,
+        "strategy": "Chaos",
+        "seed": 223526,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "98b2cf22dbe8b3f915e752c74ee23c51e3c50bbc42af33e9783bdcb8995fa479",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 33.053571375086904,
+        "durationMs": 33054,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 33.053571375086904
+      },
+      {
+        "runId": 11,
+        "strategy": "Sniper",
+        "seed": 233533,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "4875bfddfb613a509ea6fbd0aa455108e549b1a15916c0b64831c79674a6906f",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 39.73204549984075,
+        "durationMs": 39732,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 39.73204549984075
+      },
+      {
+        "runId": 12,
+        "strategy": "Explore",
+        "seed": 243540,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "3f639ec79ed6df356f0cc8152862b3c33ba13f8fc7610d2b00af7d6b3919b7b9",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 32.494060666067526,
+        "durationMs": 32494,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 32.494060666067526
+      },
+      {
+        "runId": 13,
+        "strategy": "Balance",
+        "seed": 253547,
+        "objectiveScore": 332.5878699248892,
+        "structuralHash": "343c738c5f17d305b111a3e3d26fbeb4524367b894648490ad6516a2b8dbd8fe",
+        "totalSystemCost": 536.3429426198923,
+        "totalTimeMinutes": 128.83279722988618,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 41.358233915874735,
+        "durationMs": 41358,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 41.358233915874735
+      },
+      {
+        "runId": 14,
+        "strategy": "Hybrid",
+        "seed": 263554,
+        "objectiveScore": 340.40251466201653,
+        "structuralHash": "6bfe4196fd1aff1e50d1bc520d9b0bf6a2d29ddabc29b513e7563f541fdfb537",
+        "totalSystemCost": 586.1766295249349,
+        "totalTimeMinutes": 94.62839979909819,
+        "totalDelayMinutes": 0,
+        "feasible": true,
+        "vehiclesUsed": 5,
+        "stops": 30,
+        "unassignedCount": 0,
+        "durationSeconds": 49.17017333395779,
+        "durationMs": 49170,
+        "generationsPlanned": 531,
+        "generationsExecuted": 0,
+        "terminatedEarly": true,
+        "terminationReason": "time_limit",
+        "stopReason": "time_limit",
+        "lastImprovementGeneration": 0,
+        "restartCount": 0,
+        "maxRunSeconds": 25,
+        "runtimeSec": 49.17017333395779
+      }
+    ],
+    "objectiveTrend": [
+      {
+        "runId": 1,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 332.5878699248892,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 536.3429426198923
+      },
+      {
+        "runId": 2,
+        "objectiveScore": 317.6511624253321,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 501.7716908825116,
+        "bestCostSoFar": 501.7716908825116
+      },
+      {
+        "runId": 3,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 501.7716908825116
+      },
+      {
+        "runId": 4,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 501.7716908825116
+      },
+      {
+        "runId": 5,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 501.7716908825116
+      },
+      {
+        "runId": 6,
+        "objectiveScore": 320.52238568411894,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 500.7526829331212,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 7,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 8,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 9,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 10,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 11,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 12,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 13,
+        "objectiveScore": 332.5878699248892,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 536.3429426198923,
+        "bestCostSoFar": 500.7526829331212
+      },
+      {
+        "runId": 14,
+        "objectiveScore": 340.40251466201653,
+        "bestObjectiveSoFar": 317.6511624253321,
+        "totalSystemCost": 586.1766295249349,
+        "bestCostSoFar": 500.7526829331212
+      }
+    ],
+    "solverConfig": {
+      "intensity": "high",
+      "runs": 14,
+      "popSize": 78,
+      "generations": 531,
+      "generationScale": 3,
+      "seed": 123456,
+      "alnsIterations": 10,
+      "routePoolEnabled": true,
+      "routePoolMaxRoutes": 700,
+      "setPartitionTimeLimitSec": 20,
+      "seedAssignmentEnabled": true,
+      "seedAssignmentTimeLimitSec": 8,
+      "timeLimitSec": 25,
+      "maxRunSeconds": 25,
+      "minRuntimeSec": 4,
+      "checkpointEverySec": 2,
+      "epsRel": 0.001,
+      "stallCheckpoints": 4,
+      "distanceMetric": "osrm",
+      "preferenceRelaxation": "both",
+      "allowSharingViolation": true,
+      "allowPremiumMismatch": true
+    },
+    "distance": {
+      "metric": "haversine",
+      "backend": "haversine",
+      "strictRoad": false,
+      "osrmBaseUrl": "https://router.project-osrm.org",
+      "osrmProfile": "driving"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Playwright MCP logs
+.playwright-mcp/
+
+# OS files
+.DS_Store
+
+# Secrets and local environment files
+**/.env
+**/.env.local
+**/.env.*.local
+**/.env.*
+!**/.env.example
+
+# Private key material
+**/*.pem
+**/*.key
+
+# Python caches and test artifacts
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+.vercel
+.env*.local

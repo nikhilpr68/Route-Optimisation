@@ -1,0 +1,11 @@
+# Core HTTP client used by engine/utils.py for OSRM calls
+requests>=2.31.0,<3.0.0
+
+# CSV/dataframe parsing support used by engine/parser.py (optional fallback
+# exists, but install for consistent behavior across environments).
+pandas>=2.2.0,<3.0.0
+
+# Optional acceleration used by hybrid_ortools.py and set_partition.py.
+# Engine has graceful fallbacks when OR-Tools is unavailable, but install it
+# in production for best solution quality/performance.
+ortools>=9.10.0,<10.0.0

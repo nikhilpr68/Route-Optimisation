@@ -1,0 +1,9 @@
+node_modules
+.env
+/engine/venv
+/engine/__pycache__
+.DS_Store
+*.html
+*.xlsx
+*.png
+*.pdf

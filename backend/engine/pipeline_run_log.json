@@ -1,0 +1,51 @@
+{
+  "steps": [
+    {
+      "step": 1,
+      "name": "Login",
+      "time_s": 0.06,
+      "result": "OK"
+    },
+    {
+      "step": 2,
+      "name": "Create Project",
+      "time_s": 0.0,
+      "project_id": "698c80810651f0d6ddeb5625"
+    },
+    {
+      "step": 3,
+      "name": "Upload XLSX",
+      "time_s": 0.0,
+      "result": {
+        "success": true,
+        "artifactsCount": 1
+      }
+    },
+    {
+      "step": 4,
+      "name": "Parse & Run",
+      "time_s": 86.13,
+      "result": {
+        "success": true,
+        "projectId": "698c80810651f0d6ddeb5625",
+        "status": "Completed"
+      }
+    },
+    {
+      "step": 5,
+      "name": "Fetch Results",
+      "time_s": 0.0
+    }
+  ],
+  "timestamp": "2026-02-11 18:43:37",
+  "results": {
+    "totalSystemCost": 721.2860000000001,
+    "baselineCost": 3200,
+    "savings": 2478.714,
+    "savingsPercent": 77.4598125,
+    "rides": 2,
+    "unassigned": 0,
+    "null_fields": []
+  },
+  "project_id": "698c80810651f0d6ddeb5625"
+}

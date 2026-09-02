@@ -1,0 +1,51 @@
+.map-panel-layout {
+  display: grid;
+  grid-template-areas: "main side";
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 12px;
+  align-items: start;
+  width: 100%;
+  overflow: visible;
+}
+
+.map-panel-main {
+  grid-area: main;
+  min-width: 0;
+  max-width: 100%;
+  position: relative;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.map-panel-side {
+  grid-area: side;
+  width: 320px;
+  min-width: 320px;
+  max-width: 320px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  justify-self: end;
+  position: relative;
+  z-index: 5;
+}
+
+@keyframes map-panel-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1180px) {
+  .map-panel-layout {
+    grid-template-areas:
+      "main"
+      "side";
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .map-panel-side {
+    justify-self: start;
+    max-width: 100%;
+  }
+}

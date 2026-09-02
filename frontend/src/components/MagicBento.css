@@ -1,0 +1,187 @@
+.magic-bento-grid {
+    display: grid;
+    gap: 4px;
+    width: 100%;
+}
+
+.magic-bento-grid--4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.magic-bento-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* === Card base === */
+.magic-bento-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 200px;
+    transition: transform 0.25s ease;
+    --glow-x: 50%;
+    --glow-y: 50%;
+    --glow-intensity: 0;
+    --glow-radius: 300px;
+    --glow-color: 255, 255, 255;
+}
+
+/* Border glow — follows cursor using mask-composite xor border technique */
+.magic-bento-card--border-glow {
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background: #060010;
+}
+
+.magic-bento-card--border-glow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 1.5px;
+    background: radial-gradient(var(--glow-radius) circle at var(--glow-x) var(--glow-y),
+            rgba(var(--glow-color), calc(var(--glow-intensity) * 0.9)) 0%,
+            rgba(var(--glow-color), calc(var(--glow-intensity) * 0.5)) 30%,
+            transparent 60%);
+    border-radius: inherit;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.magic-bento-card--border-glow:hover {
+    box-shadow:
+        0 4px 24px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(var(--glow-color), calc(var(--glow-intensity) * 0.12));
+}
+
+
+/* Text auto-hide effect */
+.magic-bento-card--text-autohide .magic-bento-card__content {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.magic-bento-card--text-autohide:hover .magic-bento-card__content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* === Card inner elements === */
+.magic-bento-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.magic-bento-card__label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.magic-bento-card__content {
+    position: relative;
+    z-index: 2;
+}
+
+.magic-bento-card__title {
+    margin: 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #f0f0f0;
+    line-height: 1.25;
+}
+
+.magic-bento-card__description {
+    margin: 0;
+    font-size: 14.5px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+/* === Step card variant === */
+.magic-bento-card--step {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 32px 28px;
+}
+
+.magic-bento-card--step .magic-bento-card__step-index {
+    font-size: 36px;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.1);
+    line-height: 1;
+    min-width: 44px;
+    letter-spacing: -0.02em;
+}
+
+/* === Stat card variant === */
+.magic-bento-card--stat {
+    padding: 32px;
+    min-height: auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.magic-bento-card--stat .magic-bento-card__stat-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: rgba(255, 255, 255, 0.35);
+    margin: 0 0 10px;
+}
+
+.magic-bento-card--stat .magic-bento-card__stat-value {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    color: #f0f0f0;
+    letter-spacing: -0.01em;
+}
+
+/* Particle container */
+.particle-container {
+    will-change: transform;
+}
+
+/* Section wrapper */
+.bento-section {
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .magic-bento-grid--4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .magic-bento-grid--3 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .magic-bento-grid--4 {
+        grid-template-columns: 1fr;
+    }
+}

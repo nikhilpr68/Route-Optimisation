@@ -1,0 +1,24 @@
+.map-background {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.grainient-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.map-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 12%, rgba(115, 98, 178, 0.22), transparent 42%),
+    radial-gradient(circle at 78% 72%, rgba(66, 90, 188, 0.24), transparent 48%),
+    linear-gradient(170deg, rgba(11, 14, 38, 0.2) 0%, rgba(17, 13, 43, 0.46) 100%);
+}

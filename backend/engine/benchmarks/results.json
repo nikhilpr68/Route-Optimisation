@@ -1,0 +1,83 @@
+{
+  "seeds": [
+    101
+  ],
+  "cases": [
+    "medium",
+    "small"
+  ],
+  "aggregates": {
+    "heuristic": {
+      "runs": 2,
+      "bestObjective": 137.5402863211843,
+      "meanObjective": 179.40781829803825,
+      "stdObjective": 41.86753197685394,
+      "meanRuntimeSec": 0.29999777098419145,
+      "stdRuntimeSec": 0.1826023540343158,
+      "feasibilityRate": 1.0
+    },
+    "exact": {
+      "runs": 2,
+      "bestObjective": 137.5402863211843,
+      "meanObjective": 179.40781829803825,
+      "stdObjective": 41.86753197685394,
+      "meanRuntimeSec": 0.3525468960287981,
+      "stdRuntimeSec": 0.17969768802868202,
+      "feasibilityRate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "objective": 137.5402863211843,
+      "feasible": true,
+      "runtimeSec": 0.11739541694987565,
+      "stopReason": "manual_config",
+      "structuralHash": "3d50038809253747653fce16ee8df7b700540c27317a26f1639ff65a2fff3e5d",
+      "finalSource": "heuristic",
+      "heuristicBestObjective": 137.5402863211843,
+      "exactSelectedObjective": null,
+      "case": "small",
+      "seed": 101,
+      "variant": "heuristic"
+    },
+    {
+      "objective": 137.5402863211843,
+      "feasible": true,
+      "runtimeSec": 0.17284920800011605,
+      "stopReason": "manual_config",
+      "structuralHash": "3d50038809253747653fce16ee8df7b700540c27317a26f1639ff65a2fff3e5d",
+      "finalSource": "set_partition",
+      "heuristicBestObjective": 137.5402863211843,
+      "exactSelectedObjective": 137.5402863211843,
+      "case": "small",
+      "seed": 101,
+      "variant": "exact"
+    },
+    {
+      "objective": 221.2753502748922,
+      "feasible": true,
+      "runtimeSec": 0.48260012501850724,
+      "stopReason": "manual_config",
+      "structuralHash": "b6e19e749394346307a9254d59d9823b9ebb248e445ac433b63305f3e883be91",
+      "finalSource": "heuristic",
+      "heuristicBestObjective": 221.2753502748922,
+      "exactSelectedObjective": null,
+      "case": "medium",
+      "seed": 101,
+      "variant": "heuristic"
+    },
+    {
+      "objective": 221.2753502748922,
+      "feasible": true,
+      "runtimeSec": 0.5322445840574801,
+      "stopReason": "manual_config",
+      "structuralHash": "b6e19e749394346307a9254d59d9823b9ebb248e445ac433b63305f3e883be91",
+      "finalSource": "set_partition",
+      "heuristicBestObjective": 221.2753502748922,
+      "exactSelectedObjective": 221.2753502748922,
+      "case": "medium",
+      "seed": 101,
+      "variant": "exact"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+@import "./glass.css";
+@import "./components/ReflectiveCard.css";
+/* <--- Import your new file */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: #000000;
+}
+
+
+/* Leaflet Map CSS Fix */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  color: white;
+  /* Assuming dark mode based on screenshots */
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}

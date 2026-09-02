@@ -1,0 +1,41 @@
+services:
+  - type: web
+    name: route-optimization-backend
+    runtime: node
+    rootDir: backend
+    plan: free
+    autoDeploy: true
+    healthCheckPath: /health
+    buildCommand: npm ci && python3 -m pip install --upgrade pip && python3 -m pip install -r engine/requirements.txt
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CORS_ORIGINS
+        value: https://routeoptimization-theta.vercel.app,http://localhost:5173
+      - key: FRONTEND_URL
+        value: https://routeoptimization-theta.vercel.app
+      - key: PUBLIC_FRONTEND_URL
+        value: https://routeoptimization-theta.vercel.app
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        sync: false
+      - key: GOOGLE_CLIENT_ID
+        sync: false
+      - key: MAIL_HOST
+        sync: false
+      - key: MAIL_PORT
+        sync: false
+      - key: MAIL_SECURE
+        sync: false
+      - key: MAIL_USER
+        sync: false
+      - key: MAIL_PASS
+        sync: false
+      - key: MAIL_FROM
+        sync: false

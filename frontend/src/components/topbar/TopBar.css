@@ -1,0 +1,189 @@
+.global-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 240;
+  height: 64px;
+  overflow: visible;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  will-change: transform, opacity;
+}
+
+.global-topbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 18% -60%, rgba(255, 255, 255, 0.07), transparent 50%);
+}
+
+.global-topbar.is-visible {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+  transition: transform 100ms ease-out, opacity 100ms ease-out;
+}
+
+.global-topbar.is-hidden {
+  transform: translateY(-110%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 200ms ease-in, opacity 200ms ease-in;
+}
+
+.global-topbar-inner {
+  height: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(320px, 720px) minmax(0, 1fr);
+  align-items: center;
+  gap: 16px;
+  padding: 0 14px;
+}
+
+.global-topbar-center {
+  display: flex;
+  justify-content: center;
+  min-width: 0;
+}
+
+.global-topbar-search-wrap {
+  position: relative;
+  width: min(100%, 580px);
+}
+
+.global-topbar-search {
+  width: 100%;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(236, 243, 255, 0.95);
+  outline: none;
+  padding: 0 42px 0 16px;
+  font-size: 0.92rem;
+}
+
+.global-topbar-search::placeholder {
+  color: rgba(208, 220, 240, 0.52);
+}
+
+.global-topbar-search-icon {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(220, 230, 247, 0.7);
+  display: inline-flex;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.global-topbar-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.98), rgba(3, 3, 3, 0.97));
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px) saturate(120%);
+  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  overflow: hidden;
+  z-index: 260;
+}
+
+.global-topbar-dropdown-item {
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: rgba(235, 243, 255, 0.96);
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.global-topbar-dropdown-item:hover,
+.global-topbar-dropdown-item.active {
+  background: rgba(255, 255, 255, 0.08);
+  color: #eef4ff;
+}
+
+.global-topbar-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.global-topbar-dropdown-empty {
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  color: rgba(210, 224, 244, 0.82);
+}
+
+.global-topbar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.global-topbar-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(236, 243, 255, 0.94);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+}
+
+.global-topbar-action:hover {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.24);
+  transform: translateY(-1px);
+}
+
+.global-topbar-action.is-active {
+  background: rgba(96, 165, 250, 0.18);
+  border-color: rgba(96, 165, 250, 0.34);
+  color: #e7f0ff;
+}
+
+@media (max-width: 900px) {
+  .global-topbar {
+    height: 60px;
+  }
+
+  .global-topbar-inner {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 1fr) auto;
+    padding: 0 12px;
+    gap: 10px;
+  }
+
+  .global-topbar-search {
+    height: 36px;
+  }
+
+  .global-topbar-action {
+    min-height: 38px;
+    padding: 0 12px;
+  }
+
+  .global-topbar-action span {
+    display: none;
+  }
+}
