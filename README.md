@@ -717,7 +717,3 @@ flowchart LR
 5. Open a Pull Request
 
 ---
-
-<p align="center">
-  Made by Kriti 2026 Team
-</p>
