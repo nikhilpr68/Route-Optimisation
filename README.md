@@ -21,7 +21,7 @@
 
 ---
 
-## Table of Contents
+# Table of Contents
 
 - [What is this Project?](#what-is-this-project)
 - [How it Works (Flowchart)](#how-it-works-flowchart)
